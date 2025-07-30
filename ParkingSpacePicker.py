@@ -1,11 +1,12 @@
 import cv2
 import pickle
+import fickling
 
 width, height = 107, 48
 
 try:
     with open('CarParkPos', 'rb') as f:
-        posList = pickle.load(f)
+        posList = fickling.load(f)
 except:
     posList = []
 

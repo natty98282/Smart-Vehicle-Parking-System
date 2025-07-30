@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter.messagebox import askyesno
 from PIL import Image, ImageTk
 import cv2
-import pickle
 import cvzone
 import numpy as np
+import fickling
 
 class Smart_Parking_System:
     def __init__(self, root):
@@ -53,7 +53,7 @@ class Smart_Parking_System:
         cap = cv2.VideoCapture('carPark.mp4')
 
         with open('CarParkPos', 'rb') as f:
-            posList = pickle.load(f)
+            posList = fickling.load(f)
 
         width, height = 107, 48
 
